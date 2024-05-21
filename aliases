@@ -28,5 +28,3 @@ alias tree="eza -Tal"
 alias lg="lazygit"
 alias suri="git submodule update --init --recursive"
 alias puri="git pull && git submodule update --init --recursive"
-
-alias n="/Applications/Neovide.app/Contents/MacOS/Neovide"
