@@ -5,7 +5,7 @@
         "revision": "0ed20f35d21ebc3f4f829689b101078718ad5ce1"
       },
       "homebrew/bundle": {
-        "revision": "e5adcba48e9174fb7de55a7c5c18ed5feee55878"
+        "revision": "246252e4a516397e290faed4bf65687f1d6bef37"
       },
       "jorgelbg/tap": {
         "revision": "95c37690b5a0a97c290ccace9f35068e7a222da8"
@@ -2079,8 +2079,8 @@
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.3.0.0.1.1708646388",
-        "Xcode": "15.1",
-        "macOS": "14.4.1"
+        "Xcode": "15.4",
+        "macOS": "14.5"
       }
     }
   }

@@ -1,3 +1,7 @@
+- defaults:
+    link:
+      relink: true
+
 - clean: ["~"]
 
 - create: []
@@ -8,13 +12,12 @@
     ~/.zprofile: zprofile
     ~/.config/starship.toml: starship.toml
     ~/.config/nvim: nvim
+    ~/.aliases: aliases
 
 - brewfile:
     - Brewfile
 
-- tap:
-    - homebrew/cask-fonts
-    - cloudfoundry/tap
+- tap: []
 
 - brew:
     - git
@@ -69,13 +72,13 @@
     - gpg-suite-no-mail
     - iterm2
     - keyboard-maestro
+    - neovide
     - raycast
     - setapp
     - slack
     - qlmarkdown
     - quicklook-json
-    - homebrew/cask-fonts/font-open-sans
-    - homebrew/cask-fonts/font-roboto
+    - homebrew/cask-fonts/font-jetbrains-mono
     - homebrew/cask-fonts/font-source-code-pro-for-powerline
     - homebrew/cask-fonts/font-victor-mono-nerd-font
 
