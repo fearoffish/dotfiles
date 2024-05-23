@@ -20,9 +20,6 @@
 - tap: []
 
 - brew:
-    - git
-    - gnu-sed
-    - markdownlint-cli
     - asdf
     - awscli
     - bash # Latest Bash version
@@ -37,9 +34,11 @@
     - fzf
     - gh
     - git
+    - git
+    - gnu-sed
     - gpg
-    - gpg2
     - gpg-tui
+    - gpg2
     - httpie
     - imagemagick
     - jq
@@ -47,6 +46,7 @@
     - lazydocker
     - lazygit
     - libyaml
+    - markdownlint-cli
     - mas # Mac App Store manager
     - neovim
     - oniguruma
@@ -70,17 +70,17 @@
     - capacities
     - fantastical
     - gpg-suite-no-mail
-    - iterm2
-    - keyboard-maestro
-    - neovide
-    - raycast
-    - setapp
-    - slack
-    - qlmarkdown
-    - quicklook-json
     - homebrew/cask-fonts/font-jetbrains-mono
     - homebrew/cask-fonts/font-source-code-pro-for-powerline
     - homebrew/cask-fonts/font-victor-mono-nerd-font
+    - iterm2
+    - keyboard-maestro
+    - neovide
+    - qlmarkdown
+    - quicklook-json
+    - raycast
+    - setapp
+    - slack
 
 - asdf:
     - plugin: python
