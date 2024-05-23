@@ -59,6 +59,7 @@
     - terraform-ls
     - tmux
     - vault
+    - wget
     - xplr
     - xz
     - yarn
