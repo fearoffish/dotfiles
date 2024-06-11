@@ -1,20 +1,16 @@
 # Taps
-tap 'homebrew/cask-fonts'
 tap 'homebrew/bundle'
 tap 'jorgelbg/tap' # for pinentry-touchid
 
 tap 'cloudfoundry/tap'
-# tap 'cf-core/tap', 'https://github.wdf.sap.corp/cf-core/homebrew-tap.git'
 tap 'pivotal/tap'
 
-# Binaries
 brew 'asdf'
 brew 'awscli'
 brew 'bash'
 brew 'bat'
 brew 'colima'
 brew 'coreutils'
-brew 'coreutils' # Those that come with macOS are outdated
 brew 'curl'
 brew 'direnv'
 brew 'docker'
@@ -39,7 +35,6 @@ brew 'lazydocker'
 brew 'lazygit'
 brew 'libyaml'
 brew 'luarocks'
-brew 'mackup'
 brew 'markdown-toc'
 brew 'markdownlint-cli'
 brew 'mas'
@@ -75,8 +70,8 @@ cask 'raycast'
 cask 'slack'
 cask 'qlmarkdown'
 cask 'quicklook-json'
-cask 'homebrew/cask-fonts/font-source-code-pro-for-powerline'
-cask 'homebrew/cask-fonts/font-victor-mono-nerd-font'
+cask 'font-source-code-pro-for-powerline'
+cask 'font-victor-mono-nerd-font'
 
 # Mac App Store
 mas 'Keynote', id: 409183694
