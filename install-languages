@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -e
+
+# install all the default languages I want
+asdf install ruby latest
+asdf global ruby latest
+asdf install python latest
+asdf global python latest
+asdf install nodejs latest
+asdf global nodejs latest
+
+# install gems, pips and npms
+gem install neovim
+npm i -g neovim git-mob

@@ -1,6 +1,6 @@
 # Directories
 alias dotfiles="nvim $DOTFILES"
-alias sap="cd ~/sap"
+alias sap="cd ~/SAPDevelop/"
 
 # Git
 alias gs="git status"
@@ -29,3 +29,5 @@ alias tree="eza -Tal"
 alias lg="lazygit"
 alias suri="git submodule update --init --recursive"
 alias puri="git pull && git submodule update --init --recursive"
+
+alias n="nvim"
