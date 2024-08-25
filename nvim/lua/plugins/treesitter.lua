@@ -12,6 +12,7 @@ return {
         "comment",
         "css",
         "diff",
+        "embedded_template",
         "git_config",
         "git_rebase",
         "go",

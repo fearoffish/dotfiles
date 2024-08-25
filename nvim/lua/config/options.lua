@@ -12,11 +12,9 @@ local opt = vim.opt
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 
-vim.lsp.set_log_level("info")
+vim.lsp.set_log_level("warn")
 
--- change the font
-opt.guifont = "JetBrains Mono:h16"
--- change line spacing
+opt.guifont = "VictorMono Nerd Font:h16"
 opt.linespace = 2
 
 -- Neovide specific options

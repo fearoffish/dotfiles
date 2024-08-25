@@ -12,8 +12,13 @@
     ~/.zprofile: zprofile
     ~/.config/starship.toml: starship.toml
     ~/.config/nvim: nvim
-    ~/.aliases: aliases
+    ~/.aliases: shell/aliases
+    ~/.sources: shell/sources
+    ~/.exports: shell/exports
     ~/.config/lazygit/config.yml: lazygit.yml
+    ~/.config/wezterm: wezterm
+    ~/.config/helix/config.toml: helix.toml
+    "/Users/jamievandyke/Library/Application Support/espanso": espanso
 
 - brewfile:
     - Brewfile

@@ -1,17 +1,15 @@
 return {
-
-  -- NOTE: also see treesitter.lua for languages with improved syntax highlighting
-
-  -- NOTE: colorschemes already installed in LazyVim: https://www.lazyvim.org/plugins/colorscheme
+  { "ellisonleao/gruvbox.nvim" },
 
   -- set the colorscheme
   {
     "LazyVim/LazyVim",
     -- lazy = false,
     opts = {
+      colorscheme = "gruvbox",
       -- colorscheme = "tokyonight-storm",
       -- colorscheme = "tokyonight-night",
-      colorscheme = "tokyonight-moon",
+      -- colorscheme = "tokyonight-moon",
       -- colorscheme = "tokyonight-day",
       -- colorscheme = "catppuccin",
       -- colorscheme = "catppuccin-macchiato",
