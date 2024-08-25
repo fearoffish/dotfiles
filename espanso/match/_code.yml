@@ -1,0 +1,7 @@
+matches:
+  - trigger: "erb"
+    replace: "<% $|$ %>"
+    word: true
+  - trigger: "erb="
+    replace: "<%= $|$ %>"
+    word: true
