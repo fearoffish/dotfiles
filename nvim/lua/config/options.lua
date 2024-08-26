@@ -17,6 +17,9 @@ vim.lsp.set_log_level("warn")
 opt.guifont = "VictorMono Nerd Font:h16"
 opt.linespace = 2
 
+vim.g.lazyvim_ruby_lsp = "solargraph"
+vim.g.lazyvim_ruby_formatter = "standardrb"
+
 -- Neovide specific options
 if vim.g.neovide then
   vim.g.neovide_transparency = 0.9

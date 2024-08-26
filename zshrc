@@ -1,14 +1,12 @@
-
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 HIST_STAMPS="dd/mm/yyyy"
 
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
 plugins=(git ruby zoxide fzf asdf)
 
+source $ZSH/oh-my-zsh.sh
 source ~/.exports
 source ~/.aliases
-source ~/.sources
 
 # Add all Homebrew completions
 if type brew &>/dev/null; then
@@ -19,5 +17,6 @@ if type brew &>/dev/null; then
 fi
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
