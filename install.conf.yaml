@@ -13,7 +13,6 @@
     ~/.config/starship.toml: starship.toml
     ~/.config/nvim: nvim
     ~/.aliases: shell/aliases
-    ~/.sources: shell/sources
     ~/.exports: shell/exports
     ~/.config/lazygit/config.yml: lazygit.yml
     ~/.config/wezterm: wezterm
