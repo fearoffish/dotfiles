@@ -12,7 +12,7 @@ local opt = vim.opt
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 
-vim.lsp.set_log_level("info")
+vim.lsp.set_log_level("warn")
 
 opt.guifont = "VictorMono Nerd Font:h16"
 opt.linespace = 2
