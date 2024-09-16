@@ -17,6 +17,7 @@
     ~/.config/lazygit/config.yml: lazygit.yml
     ~/.config/wezterm: wezterm
     ~/.gitconfig: git/gitconfig
+    ~/.config/colima: colima
     ~/.config/helix/config.toml: helix.toml
     "/Users/jamievandyke/Library/Application Support/espanso": espanso
 
