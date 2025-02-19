@@ -17,6 +17,7 @@
     ~/.work_exports: shell/work_exports
     ~/.config/lazygit/config.yml: lazygit.yml
     ~/.gitconfig: git/gitconfig
+    ~/a/nevaya/.gitconfig: git/nevaya_gitconfig
     ~/.config/colima: colima
 
 - brewfile:

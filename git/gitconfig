@@ -20,3 +20,6 @@
   autoSetupRemote = true
 [core]
 	excludesFile = ~/.gitignore
+
+[includeIf "gitdir:~/a/nevaya/"]
+  path = ~/a/nevaya/.gitconfig
