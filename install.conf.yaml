@@ -7,19 +7,17 @@
 - create: []
 
 - link:
-    ~/.gitignore_global: gitignore_global
+    ~/.gitignore: git/gitignore_global
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
     ~/.config/starship.toml: starship.toml
     ~/.config/nvim: nvim
     ~/.aliases: shell/aliases
     ~/.exports: shell/exports
+    ~/.work_exports: shell/work_exports
     ~/.config/lazygit/config.yml: lazygit.yml
-    ~/.config/wezterm: wezterm
     ~/.gitconfig: git/gitconfig
     ~/.config/colima: colima
-    ~/.config/helix/config.toml: helix.toml
-    "/Users/jamievandyke/Library/Application Support/espanso": espanso
 
 - brewfile:
     - Brewfile

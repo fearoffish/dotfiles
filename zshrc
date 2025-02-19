@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 HIST_STAMPS="dd/mm/yyyy"
 
-plugins=(git ruby zoxide fzf asdf)
+plugins=(git ruby bundler zoxide fzf asdf)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.exports
@@ -17,6 +17,7 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+source <(fzf --zsh)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
