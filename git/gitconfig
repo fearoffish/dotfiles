@@ -1,6 +1,7 @@
 [user]
 	name = Jamie van Dyke
 	email = me@fearof.fish
+	signingkey = A3AA25F1895353964C1F5CA6850BCA9364ED67DA
 [diff]
 	tool = Kaleidoscope
 [difftool "Kaleidoscope"]
@@ -17,3 +18,5 @@
 	prompt = false
 [push]
   autoSetupRemote = true
+[core]
+	excludesFile = ~/.gitignore
