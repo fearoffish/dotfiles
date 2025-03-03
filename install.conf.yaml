@@ -22,6 +22,7 @@
     ~/a/nevaya/.gitconfig: git/nevaya_gitconfig
     ~/.config/colima: colima
     ~/.gemrc: gemrc
+    ~/.config/aerospace/aerospace.toml: aerospace.toml
 
 - brewfile:
     - Brewfile
