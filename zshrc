@@ -7,7 +7,7 @@ plugins=(git ruby bundler zoxide fzf asdf)
 source $ZSH/oh-my-zsh.sh
 source ~/.exports
 source ~/.aliases
-source ~/.api_keys
+# source ~/.api_keys
 
 # Add all Homebrew completions
 if type brew &>/dev/null; then
@@ -20,5 +20,3 @@ fi
 source <(fzf --zsh)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh

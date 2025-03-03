@@ -4,7 +4,9 @@
 
 - clean: ["~"]
 
-- create: []
+- create:
+    - ~/.config/lazygit
+    - ~/a/nevaya
 
 - link:
     ~/.gitignore: git/gitignore_global
@@ -19,6 +21,7 @@
     ~/.gitconfig: git/gitconfig
     ~/a/nevaya/.gitconfig: git/nevaya_gitconfig
     ~/.config/colima: colima
+    ~/.gemrc: gemrc
 
 - brewfile:
     - Brewfile

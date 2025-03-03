@@ -14,4 +14,4 @@ fi
 command -v overcommit &>/dev/null && export GIT_TEMPLATE_DIR="$(overcommit --template-dir)"
 
 # Add ~/bin to the PATH
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"

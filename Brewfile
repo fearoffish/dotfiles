@@ -1,4 +1,19 @@
 tap homebrew/core
+tap homebrew/bundle
+tap homebrew/services
+tap homebrew/cask
+
+tap rcmdnk/file
+brew brew-file
+
+tap cantino/mcfly
+tap cloudfoundry/tap
+tap heroku/brew
+tap jorgelbg/tap
+tap kejadlen/git-together
+tap nikitabobko/tap
+tap osx-cross/arm
+tap osx-cross/avr
 
 brew ansible
 brew aom
@@ -61,6 +76,7 @@ brew giflib
 brew git
 brew git-delta
 brew git-lfs
+brew git-together
 brew glib
 brew gmp
 brew gnu-sed
@@ -75,8 +91,6 @@ brew heroku
 brew highway
 brew httpie
 brew hwloc
-brew icu4c@75
-brew icu4c@76
 brew imagemagick
 brew imath
 brew isl
@@ -190,7 +204,6 @@ brew openexr
 brew openjpeg
 brew openldap
 brew openslide
-brew openssl@3
 brew opus
 brew overmind
 brew p11-kit
@@ -198,17 +211,15 @@ brew pcre2
 brew pidof
 brew pinentry
 brew pinentry-mac
+brew pinentry-touchid
 brew pixman
 brew pkgconf
 brew pmix
 brew poppler
-brew postgresql@16
 brew pre-commit
 brew prettier
 brew pycparser
 brew python-packaging
-brew python@3.12
-brew python@3.13
 brew qemu
 brew rav1e
 brew readline
@@ -256,7 +267,6 @@ brew zlib
 brew zoxide
 brew zstd
 
-tap homebrew/cask
 cask 1password
 cask 1password-cli
 cask adguard
@@ -296,32 +306,7 @@ cask signal
 cask slack
 cask tower
 cask zed
-
-tap homebrew/bundle
-tap homebrew/cask-drivers
-tap homebrew/cask-fonts
-tap homebrew/cask-versions
-tap homebrew/services
-tap cantino/mcfly
-tap cloudfoundry/tap
-tap dokku/repo
-brew dokku
-
-tap heroku/brew
-
-tap jorgelbg/tap
-brew pinentry-touchid
-
-tap kejadlen/git-together
-brew git-together
-
-tap nikitabobko/tap
 cask aerospace
-
-tap osx-cross/arm
-tap osx-cross/avr
-
-tap pivotal/tap
 
 # App Store applications
 appstore 1569813296 1Password for Safari (8.10.60)
