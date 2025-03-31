@@ -15,7 +15,7 @@ vim.g.lazyvim_ruby_lsp = "solargraph"
 vim.g.lazyvim_ruby_formatter = "rubocop"
 
 if vim.g.neovide then
-  vim.o.guifont = "VictorMono Nerd Font Mono:h20" -- text below applies for VimScript
+  vim.o.guifont = "VictorMono Nerd Font Mono:h20:Oblique" -- text below applies for VimScript
 
   vim.keymap.set("n", "<D-s>", ":w<CR>") -- Save
   vim.keymap.set("v", "<D-c>", '"+y') -- Copy
