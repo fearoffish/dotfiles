@@ -1,0 +1,67 @@
+{
+  "name": "vsc-rspec",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "ruby",
+        "path": "./rspec.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-sm-am.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-sm-ar.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-sm-ar-belong_to.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-its.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-sm-ar-has_many.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-sm-ar-have_one.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-sm-route.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-sm-session.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-matchers.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-mock.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-active-job.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-let.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-boolean.code-snippets"
+      },
+      {
+        "language": "ruby",
+        "path": "./rspec-fixtures.code-snippets"
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 [user]
+    useConfigOnly = true
 	name = Jamie van Dyke
 	email = me@fearof.fish
 	signingkey = A3AA25F1895353964C1F5CA6850BCA9364ED67DA
@@ -20,6 +21,12 @@
   autoSetupRemote = true
 [core]
 	excludesFile = ~/.gitignore
+[commit]
+  gpgsign = true
+[init]
+  defaultBranch = main
 
 [includeIf "gitdir:~/a/nevaya/"]
   path = ~/a/nevaya/.gitconfig
+[pull]
+	rebase = false

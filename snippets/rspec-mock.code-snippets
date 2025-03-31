@@ -1,0 +1,75 @@
+{
+  "Expectation with mock and returns": {
+    "prefix": "rspec-expect:mock-return",
+    "description": "Rspec expectition with mock return",
+    "body": [
+      "expect($1).",
+      "\tto receive(:$2).",
+      "\tat_least(:once).",
+      "\twith(${4:no_args}).",
+      "\tand_return($0)"
+    ]
+  },
+  "Expectation with mock and returns short": {
+    "prefix": "rspec-expect:mock-return-short",
+    "description": "Rspec expectition with mock return short",
+    "body": [
+      "expect($1).",
+      "\tto receive(:$2).",
+      "\tat_least(:once).",
+      "\tand_return($0)"
+    ]
+  },
+  "Expectation exception with mock": {
+    "prefix": "rspec-expect:mock-exception-return",
+    "description": "Rspec expectition with mock exception return",
+    "body": [
+      "expect($1).",
+      "\tto receive(:$2).",
+      "\tat_least(:once).",
+      "\tand_raise(StandardError.new('$0'))"
+    ]
+  },
+  "Expectation exception": {
+    "prefix": "rspec-expect:mock",
+    "description": "Rspec expectition",
+    "body": [
+      "expect($1).",
+      "\tto receive(:$2).",
+      "\tat_least(:once).",
+      "\twith($0)"
+    ]
+  },
+  "Mock Rails.logger to check for message": {
+    "prefix": "rspec-mock-rails-logger",
+    "description": "Mock Rails.logger to check for specific message message (rubocop safe)",
+    "body": [
+      "before { allow(Rails.logger).to receive(${1::warn}) }",
+      "",
+      "it '$2' do",
+      "\t${3:<test code>}",
+      "\texpect(Rails.logger).to have_received(${4::warn}).with(/${0:<error message>}/)",
+      "end"
+    ]
+  },
+  "Let instance double": {
+    "prefix": "rspec-instance-double",
+    "description": "Declare instanec double",
+    "body": "let(:$1) { instance_double($0) }"
+  },
+  "Instance double new": {
+    "prefix": "rspec-instance-double-new",
+    "description": "Initialize instance double",
+    "body": "allow($1).to receive(:new).with($2).and_return($0)"
+  },
+  "Allow recieve and return": {
+    "prefix": "rspec-allow-receive-return",
+    "description": "Use allow to receive and return value",
+    "body": "allow($1).to receive($2).and_return($0)"
+  },
+  "Allow recieve with and return": {
+    "prefix": "rspec-allow-receive-with-and-return",
+    "description": "Use allow to receive with param and return value",
+    "body": "allow($1).to receive($2).with($3).and_return($0)"
+  }
+}

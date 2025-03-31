@@ -58,6 +58,7 @@ brew dtc
 brew dua-cli
 brew eza
 brew fd
+brew fish
 brew ffmpeg
 brew fftw
 brew flac

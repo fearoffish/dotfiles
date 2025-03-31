@@ -12,7 +12,7 @@ after-login-command = []
 after-startup-command = []
 
 # Start AeroSpace at login
-start-at-login = true
+start-at-login = false
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -127,6 +127,7 @@ alt-shift-equal = 'resize smart +50'
 alt-a = 'workspace A' # for Apple Mail
 alt-b = 'workspace B' # for Browser
 alt-c = 'workspace C' # for Code
+alt-d = 'workspace D' #
 alt-e = 'workspace E' # for File Explorer (Finder)
 alt-m = 'workspace M' # for Music
 alt-n = 'workspace N' # for Notes
@@ -148,6 +149,7 @@ alt-v = 'workspace V' # for Video Editing
 cmd-ctrl-alt-shift-a = 'move-node-to-workspace A' # for Apple Mail
 cmd-ctrl-alt-shift-b = 'move-node-to-workspace B' # for Browser
 cmd-ctrl-alt-shift-c = 'move-node-to-workspace C' # for Code
+cmd-ctrl-alt-shift-d = 'move-node-to-workspace D' #
 cmd-ctrl-alt-shift-e = 'move-node-to-workspace E' # for File Explorer (Finder)
 cmd-ctrl-alt-shift-m = 'move-node-to-workspace M' # for Music
 cmd-ctrl-alt-shift-n = 'move-node-to-workspace N' # for Notes
@@ -243,3 +245,19 @@ run = "move-node-to-workspace O"
 [[on-window-detected]]
 if.app-id = 'org.whispersystems.signal-desktop'
 run = "move-node-to-workspace O"
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+check-further-callbacks = true
+run = ['layout floating', 'move-node-to-workspace D']
+
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+run = [
+  # FIX: this is a workaround for https://github.com/nikitabobko/AeroSpace/issues/68
+  # this was also observed in:
+  # - https://github.com/ghostty-org/ghostty/issues/1840
+  # - https://github.com/ghostty-org/ghostty/issues/2006
+  "layout floating",
+  "move-node-to-workspace T",
+]

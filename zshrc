@@ -2,7 +2,14 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 HIST_STAMPS="dd/mm/yyyy"
 
-plugins=(git ruby bundler zoxide fzf asdf)
+plugins=(
+  git
+  aliases
+  asdf
+  bundler
+  rails
+  gem
+)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.exports

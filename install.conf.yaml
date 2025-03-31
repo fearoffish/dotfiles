@@ -6,13 +6,16 @@
 
 - create:
     - ~/.config/lazygit
+    - ~/.config/aerospace
+    - ~/.config/ghostty
     - ~/a/nevaya
 
 - link:
     ~/.gitignore: git/gitignore_global
+    ~/.config/ghostty/config: ghost/config
+    ~/.config/fish: fish
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
-    ~/.config/starship.toml: starship.toml
     ~/.config/nvim: nvim
     ~/.aliases: shell/aliases
     ~/.exports: shell/exports
@@ -23,6 +26,7 @@
     ~/.config/colima: colima
     ~/.gemrc: gemrc
     ~/.config/aerospace/aerospace.toml: aerospace.toml
+    ~/.config/nvim/snippets: snippets
 
 - brewfile:
     - Brewfile
@@ -34,7 +38,5 @@
     - plugin: golang
 
 - shell:
-    - [
-        cp com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist,
-        Installing iTerm preferences,
-      ]
+    - defaults write -g InitialKeyRepeat -int 10
+    - defaults write -g KeyRepeat -int 1

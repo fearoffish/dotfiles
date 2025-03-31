@@ -1,21 +1,12 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  -- add dracula
+  { "Mofiqul/dracula.nvim" },
 
-  -- set the colorscheme
+  -- Configure LazyVim to load dracula
   {
     "LazyVim/LazyVim",
-    -- lazy = false,
     opts = {
-      colorscheme = "gruvbox",
-      -- colorscheme = "tokyonight-storm",
-      -- colorscheme = "tokyonight-night",
-      -- colorscheme = "tokyonight-moon",
-      -- colorscheme = "tokyonight-day",
-      -- colorscheme = "catppuccin",
-      -- colorscheme = "catppuccin-macchiato",
-      -- colorscheme = "catppuccin-mocha",
-      -- colorscheme = "catppuccin-frappe",
-      -- colorscheme = "catppuccin-latte",
+      colorscheme = "dracula",
     },
   },
 }

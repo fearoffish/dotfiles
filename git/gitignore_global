@@ -46,3 +46,10 @@ Thumbs.db
 # Overcommit #
 # ###########
 .overcommit.yml
+
+# Tools #
+# ######
+.zed/tasks.json
+mise.*local.toml
+mise.toml
+Gemfile.local

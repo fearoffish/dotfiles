@@ -1,0 +1,151 @@
+{
+  "New Rails RSPEC clean file": {
+    "prefix": "rspec-new-rails-clean-file",
+    "description": "Rails new rspec clean file with less codes",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "require 'rails_helper'",
+      "",
+      "RSpec.describe ${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g}, type: $1 do",
+      "",
+      "\t$0",
+      "",
+      "end",
+      ""
+    ]
+  },
+  "New Rails RSPEC file": {
+    "prefix": "rspec-new-rails-file",
+    "description": "Rails new rspec file",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "require 'rails_helper'",
+      "",
+      "RSpec.describe ${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g}, type: $1 do",
+      "\tlet(:${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g}) { described_class.new() }",
+      "",
+      "\tsubject { ${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g} }",
+      "",
+      "\t$0",
+      "",
+      "end",
+      ""
+    ]
+  },
+  "New RSPEC clean file": {
+    "prefix": "rspec-new-clean-file",
+    "description": "New rspec clean file",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "require 'rails_helper'",
+      "",
+      "RSpec.describe ${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g} do",
+      "",
+      "\t$0",
+      "",
+      "end",
+      ""
+    ]
+  },
+  "New RSPEC file": {
+    "prefix": "rspec-new-file",
+    "description": "New rspec file",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "require 'rails_helper'",
+      "",
+      "RSpec.describe ${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g} do",
+      "",
+      "\tsubject { $1 }",
+      "",
+      "\t$0",
+      "",
+      "end",
+      ""
+    ]
+  },
+  "New shared examples": {
+    "prefix": "rspec-new-shared-example",
+    "description": "New rspec shared example file",
+    "body": [
+      "RSpec.shared_examples '$1' do",
+      "",
+      "\t$0",
+      "",
+      "end"
+    ]
+  },
+  "New shared context": {
+    "prefix": "rspec-new-shared-context",
+    "description": "New rspec shared context file",
+    "body": [
+      "RSpec.shared_context '${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g}' do",
+      "",
+      "\t$0",
+      "",
+      "end"
+    ]
+  },
+  "It behaves like": {
+    "prefix": "rspec-it_behaves_like",
+    "description": "it_behaves_like shared examples",
+    "body": "it_behaves_like '$0'"
+  },
+  "Include context": {
+    "prefix": "rspec-include_context",
+    "description": "include_context shared context",
+    "body": "include_context '$0'"
+  },
+  "Describe block": {
+    "prefix": "rspec-describe-block",
+    "description": "Describe block",
+    "body": [
+      "describe '$1' do",
+      "",
+      "\t$0",
+      "",
+      "end"
+    ]
+  },
+  "Context block": {
+    "prefix": "rspec-context-block",
+    "description": "Context block",
+    "body": [
+      "context '$1' do",
+      "",
+      "\t$0",
+      "",
+      "end"
+    ]
+  },
+  "It block": {
+    "prefix": "rspec-it-block",
+    "description": "Rspec it block",
+    "body": [
+      "it '$1' do",
+      "\texpect($2).to $0",
+      "end"
+    ]
+  },
+  "It inline": {
+    "prefix": "rspec-it-inline",
+    "description": "One liner it that uses subject",
+    "body": "it { is_expected.to $0 }"
+  },
+  "expect execution inline": {
+    "prefix": "rspec-expect:execution-inline",
+    "description": "Rspec expect execution inline expect { }.to",
+    "body": "expect { $1 }.to change { $2 }.$0"
+  },
+  "Expectation minimum" : {
+    "prefix": "rspec-expect:mock-minimum",
+    "description": "Rspec expectition minimum",
+    "body": [
+      "expect($1).to receive(:$0)"
+    ]
+  }
+}
