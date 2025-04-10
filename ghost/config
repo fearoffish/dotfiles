@@ -1,6 +1,6 @@
 clipboard-read = allow
 clipboard-write = allow
-theme = tokyonight
+theme = dracula
 background = #282828
 foreground = #ebdbb2
 selection-background = #665c54
@@ -34,13 +34,13 @@ font-style-italic = Medium Oblique
 font-style-bold-italic = Bold Oblique
 
 ## tabs
-
 macos-titlebar-style = tabs
 
 ## fullscreen
-
 macos-non-native-fullscreen = true
 
 ## shortcuts
-
 keybind = global:cmd+shift+f=toggle_fullscreen
+
+## option as alt
+macos-option-as-alt = true

@@ -70,6 +70,11 @@ fish_config theme choose $FISH_THEME
 set -Ux GNUPGHOME $HOME/.gnupg
 
 #
+# Emacs keybindings for fish
+#
+fish_default_key_bindings
+
+#
 # Aliases
 #
 alias gs "git status"
